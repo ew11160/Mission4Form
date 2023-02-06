@@ -8,17 +8,17 @@ namespace Mission4Assignment.Models
 {
     public class gradeCalculatorModel
     {
-        [Required] //// validation
-        public string assignments { get; set; }
-        [Required]
-        public string groupProject { get; set; }
-        [Required]
-        public string quizzes { get; set; }
-        [Required]
-        public string midterm { get; set; }
-        [Required]
-        public string final { get; set; }
-        [Required]
-        public string intex { get; set; }
+        [Range(0, 100)] //// validation
+        public double assignments { get; set; }
+        [Range(0, 100)]
+        public double groupProject { get; set; }
+        [Range(0, 100)]
+        public double quizzes { get; set; }
+        [Range(0, 100)]
+        public double midterm { get; set; }
+        [Range(0, 100)]
+        public double final { get; set; }
+        [Range(0, 100)]
+        public double intex { get; set; }
     }
 }

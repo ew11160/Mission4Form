@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4Assignment.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,13 @@ namespace Mission4Assignment.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult Calculator()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Calculator(gradeCalculatorModel model)
         {
             return View();
         }
