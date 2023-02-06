@@ -23,6 +23,7 @@
     <label>INTEX Score:</label>&emsp;
     <input id="intex" asp-for="intex" /><br />
     <input id="calculateGrade" type="submit" value="Calculate Grade" />
+    <div asp-validation-summary="All"></div>
 </form>
 <!--print the output letter grade here from js function-->
 <p id="gradeOutput" style="font-weight: bold"></p>
